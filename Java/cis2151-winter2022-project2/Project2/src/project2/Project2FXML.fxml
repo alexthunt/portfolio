@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.Project2FXMLController">
+   <children>
+      <Button fx:id="westButton" layoutX="222.0" layoutY="187.0" mnemonicParsing="false" onAction="#westButtonPressed" text="Go West" />
+      <Button fx:id="eastButton" layoutX="326.0" layoutY="187.0" mnemonicParsing="false" onAction="#eastButtonPressed" text="Go East" />
+      <Button fx:id="northButton" layoutX="274.0" layoutY="162.0" mnemonicParsing="false" onAction="#northButtonPressed" text="Go North" />
+      <Button fx:id="southButton" layoutX="274.0" layoutY="212.0" mnemonicParsing="false" onAction="#southButtonPressed" text="Go South" />
+      <Label layoutX="23.0" layoutY="31.0" text="Inventory" />
+      <Label fx:id="shovelLabel" layoutX="23.0" layoutY="64.0" />
+      <Label fx:id="hammerLabel" layoutX="23.0" layoutY="90.0" />
+      <Label fx:id="axeLabel" layoutX="23.0" layoutY="117.0" />
+      <Button fx:id="digButton" layoutX="103.0" layoutY="296.0" mnemonicParsing="false" onAction="#digButtonPressed" text="Dig A Hole" />
+      <Button fx:id="buildButton" layoutX="257.0" layoutY="296.0" mnemonicParsing="false" onAction="#buildButtonPressed" text="Build a Shack" />
+      <Button fx:id="chopButton" layoutX="423.0" layoutY="296.0" mnemonicParsing="false" onAction="#chopButtonPressed" text="Chop A Tree" />
+      <Label layoutX="408.0" layoutY="14.0" text="Description Of Space" />
+      <Label fx:id="isDiggableSpaceDescription" layoutX="382.0" layoutY="39.0" text="isDiggable?" />
+      <Label fx:id="isBuildableSpaceDescription" layoutX="383.0" layoutY="64.0" text="isBuldable?" />
+      <Label fx:id="isChoppableSpaceDescription" layoutX="377.0" layoutY="90.0" text="isChoppable?" />
+      <Button fx:id="loadButton" layoutX="15.0" layoutY="162.0" mnemonicParsing="false" onAction="#loadButtonPressed" text="Load" />
+      <Button fx:id="saveButton" layoutX="15.0" layoutY="199.0" mnemonicParsing="false" onAction="#saveButtonPressed" text="Save" />
+      <Label fx:id="actionLabel" layoutX="201.0" layoutY="90.0" text="ActionLabel" />
+      <Label fx:id="labelHasHammer" layoutX="478.0" layoutY="40.0" text="hasHammer?" />
+      <Label fx:id="labelHasAxe" layoutX="478.0" layoutY="64.0" text="hasAxe?" />
+      <Label fx:id="labelHasShovel" layoutX="478.0" layoutY="90.0" text="hasShovel?" />
+      <Button fx:id="lootButton" layoutX="274.0" layoutY="340.0" mnemonicParsing="false" onAction="#lootButtonPressed" text="Loot" />
+   </children>
+</AnchorPane>
