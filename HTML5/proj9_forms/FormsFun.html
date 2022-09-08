@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 20px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 3px solid green;
+            border-radius: 10px;
+        }
+
+        input[type=email] {
+            width: 100%;
+            padding: 20px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 3px solid green;
+            border-radius: 10px;
+        }
+
+        input[type=url] {
+            width: 100%;
+            padding: 20px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 3px solid green;
+            border-radius: 10px;
+        }
+
+        input[type=tel] {
+            width: 100%;
+            padding: 20px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 3px solid green;
+            border-radius: 10px;
+        }
+
+        input[type=number] {
+            width: 100%;
+            padding: 20px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 3px solid green;
+            border-radius: 10px;
+        }
+
+        input[type=submit] {
+            width: 45%;
+            background-color: yellow;
+            color: red;
+            padding: 14px 20px;
+            margin-right: 10px;
+            margin-left: 30px;
+            margin-top: 20px;
+            border: 5px double red;
+            border-radius: 4px;
+        }
+
+        input[type=reset] {
+            width: 45%;
+            background-color: yellow;
+            color: red;
+            padding: 14px 20px;
+            margin-right: 10px;
+            margin-left: 30px;
+            margin-top: 20px;
+            border: 5px double red;
+            border-radius: 4px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+            color: white;
+        }
+
+        h3 {
+            color: purple;
+            text-align: center;
+            font-style: italic;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: burlywood;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        Fun with Form Controls
+    </h3>
+    <div>
+        <form action="mailto:athunt@oaklandcc.edu" method="post">
+            <input type="text">
+            <input type="email">
+            <input type="url">
+            <input type="tel">
+            <input type="number">
+            <input type="submit">
+            <input type="reset">
+            <fieldset>
+                <legend>
+                    Your Personal Information
+                </legend>
+                <label for="fname">
+                    First Name
+                </label>
+                <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+                <br>
+                <label for="lname">
+                    Last Name
+                </label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.">
+                <br>
+                <label for="zip">
+                    zip
+                </label>
+                <input type="text" id="zip" name="zip" placeholder="zipcode"
+                    title="must be 5 digits (99999) or 5 digits -4 digits(99999-9999)" pattern="\d{5}([-]\d{4})?"
+                    required>
+                <br>
+                <input type="email" id="email" required>
+                <br>
+                <input type="url" id="link" list="links" pattern="https?://.+">
+                <br>
+                <input type="tel" id="phone" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <br>
+            </fieldset>
+            <h3>
+                Investment Example
+            </h3>
+            <label for="investment">Monthly investment: </label>
+            <input type="number" id="investment" min="100" max="1000" step="100" value="300">
+            <br>
+            <h3>
+                Slider Example
+            </h3>
+            <label for="investment">Monthly investment: </label>
+            <input type="number" id="investment" min="100" max="1000" step="100" value="300">
+            <br>
+            <h3>
+                Color Example
+            </h3>
+            <input type="color" id="firstcolor" value="#facd8a">
+            <h3>
+                Dates and Times Example
+            </h3>
+            <fieldset>
+                <legend>
+                    Different Dates and Time
+                </legend>
+                <input type="datetime" id="datetime">
+                <br><br>
+                <input type="datetime-local" id="datetimelocal">
+                <br><br>
+                <input type="month" id="month">
+                <br><br>
+                <input type="week" id="week">
+                <br><br>
+                <input type="date" id="date">
+                <br><br>
+            </fieldset>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 5px inset;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom-color: rgb(68, 178, 214);
+            border-right-color: rgb(68, 178, 214);
+            border-left-color: lightblue;
+            border-top-color: lightblue;
+            text-align: center;
+        }
+
+        th {
+            padding: 15px;
+            border-collapse: collapse;
+            border: 2px outset black;
+            text-align: center;
+        }
+
+        td {
+            padding: 15px;
+            border-collapse: collapse;
+            border: 2px outset black;
+            text-align: center;
+        }
+
+        .isRed {
+            background-color: red;
+        }
+
+        .isGreen {
+            background-color: lime;
+        }
+
+        .isYellow {
+            background-color: khaki;
+        }
+
+        .isBlue {
+            background-color: dodgerblue;
+        }
+
+        .isLightBlue {
+            background-color: turquoise;
+        }
+
+        .isOrange {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="5" class="isGreen">Tucker's Auto Supply</th>
+        </tr>
+        <tr>
+            <th colspan="2" rowspan="2" class="isRed">Drive Belt Deflection</th>
+            <th colspan="2" class="isRed">Used Belt Deflection</th>
+            <th rowspan="2" class="isRed">Set Deflection of new Belt</th>
+        </tr>
+        <tr>
+            <th class="isOrange">Limit</th>
+            <th class="isOrange">Adjust Deflection</th>
+        </tr>
+        <tr>
+            <th rowspan="3" class="isLightBlue">Alternator</th>
+        </tr>
+        <tr>
+            <td class="isYellow">Models without AC</td>
+            <td class="isYellow">10mm</td>
+            <td class="isYellow">5 - 7mm</td>
+            <td rowspan="2" class="isYellow">5 - 7mm</td>
+        </tr>
+        <tr>
+            <td class="isYellow">Models with AC</td>
+            <td class="isYellow">12mm</td>
+            <td class="isYellow">6 - 8mm</td>
+        </tr>
+        <tr>
+            <th colspan="2" class="isBlue">Power Steering Pump</th>
+            <td class="isYellow">12.5mm</td>
+            <td class="isYellow">7 - 9mm</td>
+            <td class="isYellow">6 - 8mm</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
