@@ -1,0 +1,12 @@
+body {
+    color: green;
+    background-color: navy;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    text-decoration: underline;
+}

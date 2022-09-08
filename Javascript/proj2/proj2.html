@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/proj2.js"></script>
+    <title>Tic-Tac_Toe</title>
+</head>
+
+<body>
+    <h2>Tic-Tac-Toe</h2>
+    <p id="timer"></p>
+    <table>
+        <tr>
+            <td><img id="row1_column1" src="sprites/blank.png"></td>
+            <td><img id="row1_column2" src="sprites/blank.png"></td>
+            <td><img id="row1_column3" src="sprites/blank.png"></td>
+        </tr>
+        <tr>
+            <td><img id="row2_column1" src="sprites/blank.png"></td>
+            <td><img id="row2_column2" src="sprites/blank.png"></td>
+            <td><img id="row2_column3" src="sprites/blank.png"></td>
+        </tr>
+        <tr>
+            <td><img id="row3_column1" src="sprites/blank.png"></td>
+            <td><img id="row3_column2" src="sprites/blank.png"></td>
+            <td><img id="row3_column3" src="sprites/blank.png"></td>
+        </tr>
+    </table>
+    <p id="playerConsole">Press Start To Play</p>
+    <input type="radio" id="radioButtonForPlayerVSPlayer" name="radioButtonForAIOrPlayerVSPlayer">
+    <label>Player VS Player</label></br>
+    <input type="radio" id="radioButtonForAI" name="radioButtonForAIOrPlayerVSPlayer">
+    <label>Player VS AI</label></br></br>
+    <button type="button" id="startButton">Start/Restart</button><br><button type="button" id="playAgain" disabled="true">Play Again?</button>
+    <p id="devConsole"></p>
+</body>
+
+</html>
